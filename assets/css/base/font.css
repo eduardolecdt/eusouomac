@@ -1,0 +1,43 @@
+/* MEDIUM */
+
+@font-face {
+  font-family: 'Medium';
+  src: url('https://res.cloudinary.com/eduluiztoledo/raw/upload/medemitomac/font/raleway-medium-webfont.woff2') format('woff2');
+
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* BOLD */
+
+@font-face {
+  font-family: 'Bold';
+  src: url('https://res.cloudinary.com/eduluiztoledo/raw/upload/medemitomac/font/raleway-bold-webfont.woff2') format('woff2');
+
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* BLACK */
+
+@font-face {
+  font-family: 'Black';
+  src: url('https://res.cloudinary.com/eduluiztoledo/raw/upload/medemitomac/font/raleway-black-webfont.woff2') format('woff2');
+
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ICONS */
+
+@font-face {
+  font-family: 'Icons';
+  src: url('https://res.cloudinary.com/eduluiztoledo/raw/upload/v1585577696/meusite/fonts/gb-icons.woff') format('woff');
+
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}

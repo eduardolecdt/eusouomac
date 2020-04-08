@@ -1,0 +1,29 @@
+/* BASE BODY */
+
+body {
+  position: relative;
+  height: 100%;
+  background-color: var(--color-white);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* SELECTION COLOR */
+
+*::selection {
+  color: var(--color-white);
+  background-color: var(--color-red);
+  scrollbar-color: var(--color-gray-darkest) var(--color-gray-darker);
+  scrollbar-width: thin;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1000px) {
+  body {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+  }
+  body::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}

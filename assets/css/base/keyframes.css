@@ -43,14 +43,14 @@
  }
 }
 
-@keyframes contrastHigh {
+@keyframes scale {
   0% {
-    filter: contrast(100%);
+    transform: scale(1);
   }
-  20% {
-    filter: contrast(130%);
+  50% {
+    transform: scale(1.1);
   }
   100% {
-    filter: contrast(100%);
+    transform: scale(1);
   }
 }

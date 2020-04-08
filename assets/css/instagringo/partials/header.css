@@ -1,0 +1,82 @@
+/* HEADER
+*/
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  background-image: url('https://res.cloudinary.com/eduluiztoledo/image/upload/v1586385632/eusouomac/instagringo/background-header-ebook.svg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+}
+
+/* IMAGEM
+*/
+
+.header .header__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header .header__image img {
+  max-width: 450px;
+  animation: scale 5s infinite;
+}
+
+/* TEXT
+*/
+
+.header .header__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding-right: 100px;
+}
+
+.header .header__text h1 {
+  font-family: 'Semibold';
+  font-size: 2.5rem;
+  color: var(--color-gray);
+  line-height: initial;
+}
+
+.header .header__text h1 span {
+  background: linear-gradient(70deg, #5851DB, #833AB4, #E1306C, #FFDC80);
+  background: -webkit-linear-gradient(70deg, #5851DB, #833AB4, #E1306C, #FFDC80);
+  background: -o-linear-gradient(70deg, #5851DB, #833AB4, #E1306C, #FFDC80);
+  background: -moz-linear-gradient(70deg, #5851DB, #833AB4, #E1306C, #FFDC80);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header .header__text p {
+  font-family: 'Medium';
+  font-size: 1.3rem;
+  max-width: 500px;
+  color: var(--color-gray);
+  line-height: initial;
+  padding: 20px 0px;
+}
+
+.header .header__text button {
+  font-family: 'Semibold';
+  font-size: 1.5rem;
+  color: var(--color-white);
+  background-color: var(--color-red);
+  line-height: initial;
+  padding: 20px 50px;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.header .header__text button:hover {
+  background-color: var(--color-gray-dark);
+}

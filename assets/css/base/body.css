@@ -11,9 +11,7 @@ body {
 
 *::selection {
   color: var(--color-white);
-  background-color: var(--color-red);
-  scrollbar-color: var(--color-gray-darkest) var(--color-gray-darker);
-  scrollbar-width: thin;
+  background-color: var(--color-cyan);
 }
 
 /* RESPONSIVE */

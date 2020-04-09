@@ -12,7 +12,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--color-gray-darkest);
+  background-color: var(--color-gray-light);
 }
 
 ::-webkit-scrollbar {
@@ -20,5 +20,5 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-gray-darker);
+  background-color: var(--color-gray-dark);
 }

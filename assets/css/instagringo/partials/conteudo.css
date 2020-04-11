@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 70px;
-  padding: 100px;
+  padding: 100px 100px 200px 100px;
   text-align: center;
 }
 
@@ -44,14 +44,14 @@
 @media screen and (max-width: 1000px) {
   .conteudo {
     grid-template-columns: 1fr 1fr;
-    padding: 100px 40px;
+    padding: 50px 40px 100px 40px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .conteudo {
     grid-template-columns: 1fr;
-    padding: 100px 20px;
+    padding: 50px 20px 150px 20px;
   }
 }
 

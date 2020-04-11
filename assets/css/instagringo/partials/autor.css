@@ -1,0 +1,127 @@
+/* AUTOR
+*/
+
+.autor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: auto;
+  padding: 200px 0px 100px 0px;
+}
+
+/* SOBRE
+*/
+
+.autor .autor__sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 50px;
+}
+
+.autor .autor__sobre img {
+  max-width: 300px;
+}
+
+.autor .autor__sobre h2 {
+  font-family: 'Semibold';
+  font-size: 2rem;
+  color: var(--color-gray-dark);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.autor .autor__sobre p {
+  font-family: 'Medium';
+  font-size: 1rem;
+  color: var(--color-gray);
+  margin-bottom: 20px;
+}
+
+/* ADQUIRIR
+*/
+
+.autor .autor__adquirir {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://res.cloudinary.com/dobvtd2lc/image/upload/v1586638574/eusouomac-instagringo/background-autor.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  padding: 50px;
+}
+
+.autor .autor__adquirir .box {
+  background-color: var(--color-white);
+  box-shadow: 27px 40px 66px -30px #00000020;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.autor .autor__adquirir .box h2 {
+  font-family: 'Semibold';
+  font-size: 1.3rem;
+  color: var(--color-gray-dark);
+  margin-bottom: 20px;
+}
+
+.autor .autor__adquirir .box p {
+  font-family: 'Medium';
+  font-size: 1rem;
+  color: var(--color-gray);
+  margin-bottom: 20px;
+}
+
+.autor .autor__adquirir .box button {
+  font-family: 'Semibold';
+  font-size: 1.2rem;
+  color: var(--color-white);
+  background: linear-gradient(70deg, #5851DB, #833AB4, #E1306C, #FFDC80);
+  background: -webkit-linear-gradient(70deg, #5851DB, #833AB4, #E1306C, #FFDC80);
+  background: -o-linear-gradient(70deg, #5851DB, #833AB4, #E1306C, #FFDC80);
+  background: -moz-linear-gradient(70deg, #5851DB, #833AB4, #E1306C, #FFDC80);
+  line-height: initial;
+  padding: 20px 50px;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.autor .autor__adquirir .box button:hover {
+  opacity: 0.8;
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 1000px) {
+  .autor {
+    grid-template-columns: 1fr;
+    padding: 50px 0px 50px 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .autor .autor__sobre {
+    padding: 0px 20px;
+    margin-top: 50px;
+  }
+  .autor .autor__adquirir {
+    padding: 80px 20px;
+  }
+  .autor .autor__adquirir .box button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .autor .autor__sobre img {
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,94 @@
+/* GARANTIA
+*/
+
+.garantia {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 50px;
+  padding: 50px;
+  align-items: center;
+  background: linear-gradient(70deg, #5851DB, #833AB4, #E1306C, #FFDC80);
+  background: -webkit-linear-gradient(70deg, #5851DB, #833AB4, #E1306C, #FFDC80);
+  background: -o-linear-gradient(70deg, #5851DB, #833AB4, #E1306C, #FFDC80);
+  background: -moz-linear-gradient(70deg, #5851DB, #833AB4, #E1306C, #FFDC80);
+}
+
+/* TEXTO
+*/
+
+.garantia .garantia__texto h2 {
+  font-family: 'Semibold';
+  font-size: 2rem;
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.garantia .garantia__texto p {
+  font-family: 'Medium';
+  font-size: 1rem;
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.garantia .garantia__texto button {
+  font-family: 'Semibold';
+  font-size: 1.2rem;
+  color: var(--color-gray-dark);
+  background-color: var(--color-white);
+  line-height: initial;
+  padding: 20px 50px;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.garantia .garantia__texto button:hover {
+  opacity: 0.8;
+}
+
+/* IMAGEM
+*/
+
+.garantia .garantia__imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.garantia .garantia__imagem img {
+  max-width: 300px;
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 800px) {
+  .garantia {
+    grid-template-columns: 1fr;
+    padding: 50px;
+  }
+  .garantia .garantia__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .garantia .garantia__texto h2 {
+    font-size: 1.5rem;
+  }
+  .garantia .garantia__texto button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .garantia {
+    padding: 50px 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .garantia .garantia__imagem img {
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,48 @@
+/* FAQ
+*/
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px 200px 20px;
+}
+
+.faq .box {
+  background-color: var(--color-white);
+  box-shadow: 0 0 1px 0 var(--color-shadow-one), 0 4px 14px var(--color-shadow-two);
+  padding: 50px;
+  border-radius: 30px;
+  max-width: 900px;
+}
+
+.faq .box .pergunta {
+  margin-bottom: 50px;
+}
+
+.faq .box .pergunta:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+.faq .box .pergunta h3 {
+  font-family: 'Medium';
+  font-size: 1.3rem;
+  color: var(--color-gray-dark);
+  padding-bottom: 5px;
+}
+
+.faq .box .pergunta p {
+  font-family: 'Medium';
+  font-size: 1rem;
+  color: var(--color-gray);
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 600px) {
+  .faq .box {
+    padding: 50px 30px;
+  }
+}

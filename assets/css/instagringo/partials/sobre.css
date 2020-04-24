@@ -57,7 +57,7 @@
   background-color: var(--color-white);
   border-radius: 30px;
   padding: 40px 70px;
-  box-shadow: -27px 40px 66px -30px #00000020;
+  box-shadow: 0 0 1px 0 var(--color-shadow-one), 0 4px 14px var(--color-shadow-two);
   max-width: 500px;
 }
 

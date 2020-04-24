@@ -23,46 +23,21 @@
   -webkit-text-fill-color: transparent;
 }
 
-.preco span.price {
+.preco p.parcelado {
   font-family: 'Semibold';
-  font-size: 7rem;
+  font-size: 1.5rem;
   max-width: 500px;
   color: var(--color-gray);
   line-height: initial;
-  padding: 20px 0px;
 }
 
-.preco .time {
-  display: flex;
-  flex-direction: row;
-}
-
-.preco .time div.time__box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--color-gray);
-  border-radius: 25px;
-  padding: 20px;
-  margin: 10px;
-  width: 200px;
-}
-
-.preco .time div.time__box span {
-  font-size: 4rem;
+.preco span.price {
   font-family: 'Semibold';
-  color: var(--color-white);
-  margin-bottom: 20px;
-  line-height: 50px;
-}
-
-.preco .time div.time__box p {
-  font-size: 1.5rem;
-  font-family: 'Medium';
-  color: var(--color-white);
-  margin-top: -20px;
-  opacity: 0.5;
+  font-size: 4rem;
+  max-width: 500px;
+  color: var(--color-gray);
+  line-height: initial;
+  padding: 20px 0px 0px 0px;
 }
 
 .preco button {
@@ -92,18 +67,10 @@
     font-size: 1.5rem;
   }
   .preco span.price {
-    font-size: 5rem;
+    font-size: 4rem;
   }
-  .preco .time div.time__box {
-    width: 150px;
-  }
-  .preco .time div.time__box span {
-    font-size: 3rem;
-    line-height: 50px;
-  }
-  .preco .time div.time__box p {
-    font-size: 1rem;
-    margin-top: -20px;
+  .preco button {
+    margin-top: 20px;
   }
 }
 
@@ -111,43 +78,13 @@
   .preco h2 {
     font-size: 1.2rem;
   }
-  .preco span.price {
-    font-size: 3.5rem;
-  }
-  .preco .time div.time__box {
-    width: 100px;
-  }
-  .preco .time div.time__box span {
-    font-size: 3rem;
-    line-height: 40px;
-  }
-  .preco .time div.time__box p {
-    font-size: 0.8rem;
-    margin-top: -20px;
-  }
-  .preco button {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .preco h2 {
+  .preco p.parcelado {
     font-size: 1.2rem;
   }
   .preco span.price {
-    font-size: 3.5rem;
-  }
-  .preco .time div.time__box {
-    width: 90px;
-    padding: 20px 10px;
-    margin: 5px;
-  }
-  .preco .time div.time__box span {
     font-size: 2rem;
-    line-height: 20px;
   }
-  .preco .time div.time__box p {
-    font-size: 0.8rem;
-    margin-top: -15px;
+  .preco button {
+    font-size: 1rem;
   }
 }

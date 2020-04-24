@@ -6,7 +6,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   min-height: auto;
-  padding: 200px 0px 100px 0px;
+  padding: 200px 0px;
 }
 
 /* SOBRE
@@ -60,7 +60,7 @@
 
 .autor .autor__adquirir .box {
   background-color: var(--color-white);
-  box-shadow: 27px 40px 66px -30px #00000020;
+  box-shadow: 0 0 1px 0 var(--color-shadow-one), 0 4px 14px var(--color-shadow-two);
   padding: 40px;
   border-radius: 20px;
 }
@@ -103,7 +103,7 @@
 @media screen and (max-width: 1000px) {
   .autor {
     grid-template-columns: 1fr;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px;
   }
 }
 

@@ -2,29 +2,25 @@
 */
 
 .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
   min-height: 100vh;
   background-image: url('https://res.cloudinary.com/dobvtd2lc/image/upload/eusouomac-instagringo/background-header-ebook.svg');
   background-repeat: no-repeat;
   background-position: top left;
-  background-size: 50%;
+  background-size: 30%;
 }
 
 /* IMAGEM
 */
 
-.header .header__image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header__video {
+  max-width: 700px;
   width: 100%;
-  height: 100%;
-}
-
-.header .header__image img {
-  max-width: 400px;
-  animation: scale 5s infinite;
 }
 
 /* TEXT
@@ -34,15 +30,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  max-width: 500px;
   width: 100%;
   height: 100%;
-  padding-right: 100px;
 }
 
 .header .header__text h1 {
   font-family: 'Semibold';
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--color-gray);
   line-height: initial;
 }
@@ -91,10 +87,11 @@
   .header {
     grid-template-columns: 1fr;
     background-size: 45%;
+    padding: 50px 20px;
   }
   .header .header__text {
     padding-right: 0px;
-    padding: 60px 30px;
+    padding: 20px 0px;
   }
 }
 

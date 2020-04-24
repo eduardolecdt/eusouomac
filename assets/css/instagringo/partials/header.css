@@ -12,7 +12,7 @@
   background-image: url('https://res.cloudinary.com/dobvtd2lc/image/upload/eusouomac-instagringo/background-header-ebook.svg');
   background-repeat: no-repeat;
   background-position: top left;
-  background-size: 30%;
+  background-size: 20%;
 }
 
 /* IMAGEM
@@ -86,7 +86,7 @@
 @media screen and (max-width: 1000px) {
   .header {
     grid-template-columns: 1fr;
-    background-size: 45%;
+    background-size: 10%;
     padding: 50px 20px;
   }
   .header .header__text {
@@ -97,10 +97,13 @@
 
 @media screen and (max-width: 600px) {
   .header {
-    background-size: 70%;
+    background-size: 20%;
   }
-  .header .header__text {
-    padding: 60px 20px;
+  .header .header__text:nth-child(1) {
+    padding: 60px 20px 10px 20px;
+  }
+  .header .header__text:nth-child(2) {
+    padding: 0px 20px 30px 20px;
   }
   .header .header__text p {
     font-size: 1rem;

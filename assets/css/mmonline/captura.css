@@ -93,6 +93,13 @@ button {
   border-radius: 100px;
 }
 
+a {
+  display: flex;
+  align-items: flex-start;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
 button:hover {
   color: var(--color-secondary);
   background-color: var(--color-white);

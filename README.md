@@ -1,2 +1,0 @@
-# eusouomac
-Site do @eusouomac

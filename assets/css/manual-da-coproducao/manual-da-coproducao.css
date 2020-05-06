@@ -1,0 +1,7 @@
+/* PARTIALS MANUAL DA COPRODUCAO */
+
+@import './partials/header.css';
+
+/* ALL BASE */
+
+@import './base/all.css';

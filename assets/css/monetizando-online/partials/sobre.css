@@ -1,0 +1,314 @@
+/* SOBRE */
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: var(--color-secondary-darker);
+}
+
+/* RESUMO */
+
+.sobre .sobre__resumo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding: 100px 50px 30px 50px;
+}
+
+.sobre .sobre__resumo .resumo__box {
+  height: 100%;
+  background-color: var(--color-secondary-darkest);
+  padding: 40px 30px;
+  border-radius: 15px;
+}
+
+.sobre .sobre__resumo .resumo__box h6 {
+  font-family: 'Black';
+  font-size: 4rem;
+  color: var(--color-primary);
+  background-image: linear-gradient(90deg, var(--color-secondary-darker), transparent);
+  padding-left: 40px;
+  margin-bottom: 30px;
+  border-radius: 100px;
+}
+
+.sobre .sobre__resumo .resumo__box p {
+  font-family: 'Medium';
+  font-size: 1.3rem;
+  color: var(--color-white);
+}
+
+.sobre .sobre__resumo .resumo__box p span {
+  color: var(--color-primary);
+}
+
+/* COMPLEMENTO RESUMO */
+
+.sobre .sobre__complemento {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: calc(100% - 100px);
+  background-color: var(--color-secondary-darkest);
+  margin-bottom: 100px;
+  border-radius: 15px;
+}
+
+.sobre .sobre__complemento .complemento__title {
+  padding: 40px 30px;
+}
+
+.sobre .sobre__complemento .complemento__title h2 {
+  font-family: 'Bold';
+  font-size: 2rem;
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.sobre .sobre__complemento .complemento__title p {
+  font-family: 'Bold';
+  font-size: 1.5rem;
+  color: var(--color-primary-lightest);
+}
+
+.sobre .sobre__complemento .complemento__title p span {
+  color: var(--color-primary);
+}
+
+.sobre .sobre__complemento .complemento__subtitle {
+  padding: 40px 30px;
+}
+
+.sobre .sobre__complemento .complemento__subtitle p {
+  font-family: 'Medium';
+  font-size: 1.2rem;
+  color: var(--color-white);
+  opacity: 0.5;
+}
+
+/* NEGATIVO */
+
+.sobre .sobre__negativo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary-dark);
+  width: 100%;
+  padding: 150px 20px;
+}
+
+.sobre .sobre__negativo h2 {
+  font-family: 'Bold';
+  font-size: 1.8rem;
+  color: var(--color-white);
+  max-width: 1000px;
+  text-align: center;
+}
+
+.sobre .sobre__negativo h2 span {
+  color: var(--color-primary);
+}
+
+.sobre .sobre__negativo p {
+  font-family: 'Medium';
+  font-size: 1.3rem;
+  color: var(--color-white);
+  opacity: 0.5;
+  max-width: 700px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* SOLUÇÃO */
+
+.sobre .sobre__solucao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary-darkest);
+  padding: 20px;
+  width: 100%;
+}
+
+.sobre .sobre__solucao h3 {
+  font-family: 'Medium';
+  font-size: 1.3rem;
+  color: var(--color-primary);
+}
+
+/* COMPRA */
+
+.sobre .sobre__compra {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  background-color: var(--color-secondary-dark);
+  height: auto;
+  width: 100%;
+  padding: 100px 0px;
+}
+
+.sobre .sobre__compra .compra__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  margin-right: 100px;
+}
+
+.sobre .sobre__compra .compra__title button {
+  font-family: 'black';
+  font-size: 1.2rem;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  padding: 20px 30px;
+  border-radius: 15px;
+  transition: all 0.2s;
+}
+
+.sobre .sobre__compra .compra__title button:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary-light);
+  box-shadow: 0px 0px 50px 0px var(--color-primary-light);
+}
+
+.sobre .sobre__compra .compra__title h2 {
+  font-family: 'Bold';
+  font-size: 2rem;
+  color: var(--color-white);
+  margin-bottom: 40px;
+}
+
+.sobre .sobre__compra .compra__title h2 span {
+  color: var(--color-primary);
+}
+
+.sobre .sobre__compra .compra__title h3 {
+  font-family: 'Medium';
+  font-size: 1.5rem;
+  color: var(--color-white);
+  opacity: 0.5;
+  margin-bottom: 30px;
+}
+
+.sobre .sobre__compra .compra__image {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 550px;
+  height: auto;
+}
+
+.sobre .sobre__compra .compra__image img {
+  width: 100%;
+  height: auto;
+  animation: contrastHigh 30s infinite;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+  .sobre .sobre__compra .compra__title h2 {
+    font-size: 1.5rem;
+  }
+  .sobre .sobre__compra .compra__title h3 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  .sobre .sobre__compra .compra__title button {
+    font-size: 1.1rem;
+    padding: 20px 30px;
+  }
+  .sobre .sobre__compra .compra__image {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sobre .sobre__resumo {
+    grid-template-columns: 1fr;
+    padding: 100px 40px 30px 40px;
+  }
+  .sobre .sobre__complemento {
+    flex-direction: column;
+    width: calc(100% - 80px);
+  }
+  .sobre .sobre__compra {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .sobre .sobre__compra .compra__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+    margin-right: 0px;
+    margin-bottom: 100px;
+    padding: 0px 40px;
+  }
+  .sobre .sobre__compra .compra__image {
+    justify-content: center;
+    align-self: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sobre .sobre__resumo {
+    padding: 100px 20px 30px 20px;
+  }
+  .sobre .sobre__complemento {
+    width: calc(100% - 40px);
+  }
+  .sobre .sobre__resumo .resumo__box h6 {
+    font-size: 4rem;
+  }
+  .sobre .sobre__resumo .resumo__box p {
+    font-size: 1rem;
+  }
+  .sobre .sobre__complemento .complemento__title h2 {
+    font-size: 1.5rem;
+  }
+  .sobre .sobre__complemento .complemento__title p {
+    font-size: 1.2rem;
+  }
+  .sobre .sobre__complemento .complemento__subtitle p {
+    font-size: 1rem;
+  }
+  .sobre .sobre__compra .compra__title {
+    padding: 0px 20px;
+  }
+  .sobre .sobre__compra .compra__title h2 {
+    font-size: 1.3rem;
+  }
+  .sobre .sobre__compra .compra__title h3 {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .sobre .sobre__compra .compra__title button {
+    font-size: 1rem;
+    padding: 20px 30px;
+  }
+  .sobre .sobre__negativo h2 {
+    font-size: 1.3rem;
+  }
+  .sobre .sobre__negativo p {
+    font-size: 1rem;
+  }
+  .sobre .sobre__compra {
+    padding: 50px 0px;
+  }
+}

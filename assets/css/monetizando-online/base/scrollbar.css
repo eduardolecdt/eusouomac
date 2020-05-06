@@ -1,0 +1,24 @@
+/* SCROLLBAR */
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--color-secondary-dark) var(--color-secondary-light);
+  scrollbar-width: thin;
+}
+
+* {
+  scrollbar-color: var(--color-secondary-dark) var(--color-secondary-light);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
+}

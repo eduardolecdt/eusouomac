@@ -1,6 +1,5 @@
-/*=======================*\
-    CORES
-\*=======================*/
+/* CORES
+*/
 
 :root {
 
@@ -39,35 +38,7 @@
     --color-orange-light: #FFA26B60;
     --color-orange-extra-light: #FFA26B20;
 
-    --color-cyan: #6979F8;
-    --color-cyan-light: #6979F860;
-    --color-cyan-extra-light: #6979F820;
-    --color-cyan-dark: #5B69DA;
-    --color-cyan-extra-dark: #282E5E;
-
-    --color-pink: #a264ff;
-    --color-pink-light: #e162bb60;
-    --color-pink-extra-light: #e162bb20;
-
     --color-shadow-one: #3b59b214;
     --color-shadow-two: #3b59b20f;
-
-  }
-
-  /*=======================*\
-      MODO NOTURNO
-  \*=======================*/
-
-  body[data-theme='dark'] {
-
-    --color-white: #141419;
-    --color-gray-extra-light: #1B1C21;
-    --color-gray-light: #272930;
-    --color-gray-extra-dark: #FFFFFF;
-    --color-gray-dark: #828386;
-    --color-gray: #5D5F61;
-    --color-shadow-one: transparent;
-    --color-shadow-two: transparent;
-    --color-white-agenda-horario: #1B1C21;
 
   }

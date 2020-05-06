@@ -1,0 +1,17 @@
+/* MONETIZANDO ONLINE */
+
+@import './partials/beneficios.css';
+@import './partials/conteudo.css';
+@import './partials/depoimentos.css';
+@import './partials/footer.css';
+@import './partials/garantia.css';
+@import './partials/header.css';
+@import './partials/oferta.css';
+@import './partials/pesquisa.css';
+@import './partials/sobre.css';
+@import './partials/tempo.css';
+
+
+/* ALL BASE */
+
+@import './base/all.css';

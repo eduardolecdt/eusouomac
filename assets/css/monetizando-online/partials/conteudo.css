@@ -1,0 +1,128 @@
+/* CONTEÚDO */
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-secondary-darker);
+  padding: 100px;
+}
+
+/* TITLE */
+
+.conteudo .conteudo__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.conteudo .conteudo__title h1 {
+  font-family: 'Medium';
+  font-size: 2rem;
+  max-width: 900px;
+  text-align: center;
+  color: var(--color-white);
+  opacity: 0.5;
+}
+
+/* SOBRE */
+
+.conteudo .conteudo__sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  align-items: center;
+  padding: 50px;
+}
+
+.conteudo .conteudo__sobre:nth-child(odd) {
+  background-color: var(--color-secondary-darkest);
+  border-radius: 15px;
+}
+
+.conteudo .conteudo__sobre .sobre__title p {
+  font-family: 'Bold';
+  font-size: 2rem;
+  color: var(--color-white);
+}
+
+.conteudo .conteudo__sobre .sobre__title p span {
+  color: var(--color-primary);
+}
+
+.conteudo .conteudo__sobre .sobre__imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  max-width: 400px;
+  height: auto;
+}
+
+.conteudo .conteudo__sobre .sobre__imagem img {
+  width: 100%;
+  height: auto;
+  transform: rotate(20deg);
+}
+
+.conteudo .conteudo__sobre .sobre__title button {
+  font-family: 'black';
+  font-size: 1.2rem;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  padding: 20px 30px;
+  border-radius: 15px;
+  transition: all 0.2s;
+  margin-top: 20px;
+}
+
+.conteudo .conteudo__sobre .sobre__title button:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary-light);
+  box-shadow: 0px 0px 50px 0px var(--color-primary-light);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+  .conteudo .conteudo__sobre {
+    grid-gap: 30px;
+    padding: 30px;
+  }
+  .conteudo .conteudo__sobre .sobre__title p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-secondary-darker);
+    padding: 100px 20px;
+  }
+  .conteudo .conteudo__sobre {
+    display: flex;
+    flex-direction: column-reverse;
+    grid-gap: 30px;
+    padding: 80px 30px;
+  }
+  .conteudo .conteudo__sobre:nth-child(odd) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .conteudo .conteudo__sobre .sobre__title p {
+    font-size: 1.2rem;
+  }
+  .conteudo .conteudo__title h1 {
+    font-size: 1.5rem;
+  }
+  .conteudo .conteudo__sobre .sobre__title button {
+    font-size: 1rem;
+    padding: 20px 30px;
+  }
+}

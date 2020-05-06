@@ -1,3 +1,5 @@
+/* PARTIALS INSTA GRINGO */
+
 @import './partials/autor.css';
 @import './partials/header.css';
 @import './partials/garantia.css';
@@ -6,3 +8,8 @@
 @import './partials/faq.css';
 @import './partials/bonus.css';
 @import './partials/preco.css';
+
+
+/* ALL BASE */
+
+@import './base/all.css';

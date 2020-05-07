@@ -20,7 +20,10 @@
   align-items: flex-start;
   justify-content: center;
   height: 100%;
-  background: linear-gradient(90deg, var(--color-secondary-dark), var(--color-secondary-darker));
+  background-image: linear-gradient(left, #002749, #00315D);
+  background-image: -webkit-linear-gradient(left, #002749, #00315D);
+  background-image: -moz-linear-gradient(left, #002749, #00315D);
+  background-image: -o-linear-gradient(left, #002749, #00315D);
 }
 
 .audiencia_mais .texto h2 {

@@ -1,0 +1,33 @@
+/* AUDIENCIA
+*/
+
+.audiencia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--color-secondary);
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+
+.audiencia p {
+  font-family: 'Medium';
+  font-size: 1rem;
+  color: var(--color-white);
+  max-width: 900px;
+}
+
+.audiencia p span {
+  color: var(--color-primary);
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 600px) {
+  .audiencia {
+    padding: 100px 20px;
+  }
+}

@@ -20,7 +20,7 @@
   align-items: flex-start;
   justify-content: center;
   height: 100%;
-  background: linear-gradient(90deg, var(--color-secondary-darkest), var(--color-secondary-dark));
+  background: linear-gradient(90deg, var(--color-secondary-dark), var(--color-secondary-darker));
 }
 
 .header .texto h1 {
@@ -60,7 +60,7 @@
   justify-content: center;
   padding: 50px;
   height: 100%;
-  background-color: var(--color-secondary-darker);
+  background-color: var(--color-secondary-darkest);
 }
 
 /* RESPONSIVO

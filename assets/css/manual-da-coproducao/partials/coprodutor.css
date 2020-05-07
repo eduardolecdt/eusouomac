@@ -20,7 +20,7 @@
   align-items: flex-start;
   justify-content: center;
   height: 100%;
-  background-color: var(--color-secondary-darkest);
+  background-color: var(--color-secondary-darker);
 }
 
 .coprodutor .texto h2 {
@@ -29,9 +29,7 @@
   color: var(--color-white);
 }
 
-.coprodutor .texto p {
-  font-family: 'Bold';
-  font-size: 1.1rem;
+.coprodutor .texto h2 span {
   color: var(--color-primary);
 }
 
@@ -56,25 +54,24 @@
 
 @media screen and (max-width: 1000px) {
   .coprodutor {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
   }
   .coprodutor .texto {
     min-height: 400px;
   }
   .coprodutor .imagem {
-    max-height: 400px;
+    max-height: 500px;
+    width: 100%;
   }
   .coprodutor .imagem img {
-    height: 100%;
+    width: 300px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .coprodutor .texto h2 {
     font-size: 1.3rem;
-  }
-  .coprodutor .texto p {
-    font-size: 1rem;
   }
   .coprodutor .texto {
     padding: 50px 20px;

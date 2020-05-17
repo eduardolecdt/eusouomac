@@ -81,9 +81,10 @@
     padding: 20px 30px;
   }
   .header__image {
-    width: 100%;
     max-width: 500px;
+    margin-right: 0px;
     align-self: center;
+    justify-content: center;
   }
 }
 
@@ -102,10 +103,14 @@
     padding: 0px 40px;
   }
   .header__image {
-    max-width: 300px;
+    max-width: auto;
     margin-right: 0px;
     margin-top: 50px;
     margin-bottom: 30px;
+  }
+  .header__image img {
+    height: 400px;
+    width: auto;
   }
 }
 
@@ -123,5 +128,12 @@
   .header__title button {
     font-size: 1rem;
     padding: 20px 30px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .header__image img {
+    height: 250px;
   }
 }

@@ -216,23 +216,6 @@
 /* RESPONSIVE */
 
 @media screen and (max-width: 1200px) {
-  .sobre .sobre__compra .compra__title h2 {
-    font-size: 1.5rem;
-  }
-  .sobre .sobre__compra .compra__title h3 {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  .sobre .sobre__compra .compra__title button {
-    font-size: 1.1rem;
-    padding: 20px 30px;
-  }
-  .sobre .sobre__compra .compra__image {
-    max-width: 500px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
   .sobre .sobre__resumo {
     grid-template-columns: 1fr;
     padding: 100px 40px 30px 40px;
@@ -252,17 +235,11 @@
     justify-content: center;
     max-width: 700px;
     margin-right: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     padding: 0px 40px;
   }
   .sobre .sobre__compra .compra__image {
-    justify-content: center;
-    align-self: center;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    max-width: 300px;
+    display: none;
   }
 }
 

@@ -45,7 +45,7 @@
     if (!_isAndroid()) return
     if (!_isInAppBrowser()) return
 
-    window.location = 'intent://eusouomac.com/coproducao#Intent;scheme=https;package=com.android.chrome;end'
+    window.location = 'intent://eusouomac.com/lead/coproducao#Intent;scheme=https;package=com.android.chrome;end'
   }
 
   redirectAndroidInAppBrowsers()

@@ -12,7 +12,7 @@ document.getElementById("minuto").innerHTML = minutes;
 document.getElementById("segundo").innerHTML =seconds;
 if (t < 0) {
         clearInterval(x);
-        document.getElementById("text").innerHTML = "Desculpe! O Treinamento não está mais aberto.";
+        document.getElementById("text").innerHTML = "Desculpe! O carrinho não está mais aberto.";
         document.getElementById("hora").innerHTML ='0';
         document.getElementById("minuto").innerHTML ='0' ;
         document.getElementById("segundo").innerHTML = '0'; }

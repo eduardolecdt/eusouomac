@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Medium';
-  src: url('https://res.cloudinary.com/eduluiztoledo/raw/upload/medemitomac/font/raleway-medium-webfont.woff2') format('woff2');
+  src: url('../../../../images/base/fonts/raleway-medium.woff2?v=1.0') format('woff2');
 
   font-display: swap;
   font-weight: normal;
@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: 'Bold';
-  src: url('https://res.cloudinary.com/eduluiztoledo/raw/upload/medemitomac/font/raleway-bold-webfont.woff2') format('woff2');
+  src: url('../../../../images/base/fonts/raleway-bold.woff2?v=1.0') format('woff2');
 
   font-display: swap;
   font-weight: normal;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'Black';
-  src: url('https://res.cloudinary.com/eduluiztoledo/raw/upload/medemitomac/font/raleway-black-webfont.woff2') format('woff2');
+  src: url('../../../../images/base/fonts/raleway-black.woff2?v=1.0') format('woff2');
 
   font-display: swap;
   font-weight: normal;

@@ -185,16 +185,17 @@ button {
 
 .captura .texto h1 {
   font-family: 'Semibold';
-  font-size: 3rem;
+  font-size: 2.9rem;
   color: var(--color-white);
-  line-height: 0;
+  line-height: 0px;
 }
 
 .captura .texto h2 {
   font-family: 'Medium';
-  font-size: 1.5rem;
-  color: var(--color-white);
-  padding-bottom: 40px;
+  font-size: 2rem;
+  color: var(--color-primary);
+  line-height: 0px;
+  padding-bottom: 30px;
 }
 
 .captura form {
@@ -207,7 +208,7 @@ button {
 .captura form input.nome {
   font-family: 'Medium';
   font-size: 1.2rem;
-  color: var(--color-white);
+  color: var(--color-primary);
   background-color: var(--color-secondary-dark);
   padding: 20px 20px;
   border-radius: 15px;
@@ -217,7 +218,8 @@ button {
 }
 
 .captura form input.nome::placeholder {
-  opacity: 0.5;
+  opacity: 1;
+  color: var(--color-white);
 }
 
 .captura form input.nome:focus {
@@ -286,7 +288,7 @@ button.telegram {
 /* RESPONSIVO
 */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .captura {
     grid-template-columns: 1fr;
   }
@@ -295,20 +297,17 @@ button.telegram {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .captura .texto {
     padding: 0px 20px 100px 20px;
   }
   .captura .texto h1 {
-    font-family: 'Semibold';
-    font-size: 4rem;
-    color: var(--color-white);
-    line-height: 60px;
+    font-size: 2.5rem;
+    line-height: 50px;
+    max-width: 260px;
   }
   .captura .texto h2 {
-    font-family: 'Medium';
     font-size: 1.5rem;
-    color: var(--color-white);
     padding-bottom: 40px;
   }
 }

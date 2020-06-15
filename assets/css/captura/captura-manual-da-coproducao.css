@@ -185,7 +185,7 @@ button {
 
 .captura .texto h1 {
   font-family: 'Semibold';
-  font-size: 2.9rem;
+  font-size: 2.5rem;
   color: var(--color-white);
   line-height: 0px;
 }
@@ -302,9 +302,9 @@ button.telegram {
     padding: 0px 20px 100px 20px;
   }
   .captura .texto h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 50px;
-    max-width: 260px;
+    max-width: 230px;
   }
   .captura .texto h2 {
     font-size: 1.5rem;

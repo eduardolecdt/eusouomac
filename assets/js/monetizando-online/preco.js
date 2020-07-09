@@ -1,5 +1,5 @@
-document.querySelector('#preco_total').innerText = 'R$997'
-document.querySelector('#preco_parcelado').innerText = '12x de R$97'
+document.querySelector('#preco_total').innerText = 'R$1.097,00'
+document.querySelector('#preco_parcelado').innerText = '12x de R$106,88'
 document.querySelector('#link_hotmart_1').href = 'https://pay.hotmart.com/D19138587O?checkoutMode=10'
 document.querySelector('#link_hotmart_2').href = 'https://pay.hotmart.com/D19138587O?checkoutMode=10'
 document.querySelector('#link_hotmart_3').href = 'https://pay.hotmart.com/D19138587O?checkoutMode=10'

@@ -1,0 +1,22 @@
+/* SCROLLBAR
+*/
+
+html {
+  scrollbar-width: none;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
+}

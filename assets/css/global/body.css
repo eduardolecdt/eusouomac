@@ -1,0 +1,22 @@
+/* BODY
+*/
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 1000px) {
+  body {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+  }
+  body::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}

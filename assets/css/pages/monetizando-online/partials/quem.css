@@ -1,0 +1,98 @@
+/* QUEM
+*/
+
+.quem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-white);
+}
+
+/* DIVISAO
+*/
+
+.quem .divisao {
+  width: 100%;
+  height: 50px;
+  background-color: var(--c-white);
+  background-image: url('../../../../../images/pages/monetizando-online/background-quem.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* QUEM
+*/
+
+.quem .quadros {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  padding: 100px 30px;
+}
+
+.quem .quadros .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+}
+
+.quem .quadros .quadro:nth-child(2) {
+  margin: 0px 40px;
+}
+
+.quem .quadros .quadro h2 {
+  font-family: 'bold';
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: var(--c-blue-dark);
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+.quem .quadros .quadro p {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+}
+
+.quem .quadros .quadro.especial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 30px 20px;
+  border-radius: 15px;
+  background-color: var(--c-blue-dark);
+  width: 100%;
+}
+
+.quem .quadros .quadro.especial p {
+  font-family: 'bold';
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: var(--c-white);
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 800px) {
+  .quem .quadros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+  }
+  .quem .quadros .quadro:nth-child(2) {
+    margin: 40px 0px;
+  }
+}

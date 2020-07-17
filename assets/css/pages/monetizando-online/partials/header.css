@@ -31,7 +31,6 @@ header .texto h1 {
   color: var(--c-blue-dark);
   text-transform: uppercase;
   max-width: 550px;
-  margin: 0px;
 }
 
 header .texto h1 span {
@@ -43,6 +42,7 @@ header .texto p {
   font-size: 1rem;
   color: var(--c-gray);
   max-width: 650px;
+  padding: 15px 0px;
 }
 
 header .texto button {
@@ -75,8 +75,14 @@ header .imagem {
   padding: 100px;
 }
 
-header .imagem img {
+header .imagem img.logo {
+  width: 100%;
+}
+
+header .imagem img.perfil {
+  width: 200px;
   height: 200px;
+  margin-bottom: 30px;
 }
 
 /* RESPONSIVO
@@ -96,7 +102,8 @@ header .imagem img {
   }
   header .texto img {
     display: flex;
-    height: 100px;
+    height: 300px;
+    width: 300px;
   }
   header .texto p {
     max-width: 500px;
@@ -117,6 +124,7 @@ header .imagem img {
     max-width: 300px;
   }
   header .texto img {
-    height: 70px;
+    height: 200px;
+    width: 200px;
   }
 }

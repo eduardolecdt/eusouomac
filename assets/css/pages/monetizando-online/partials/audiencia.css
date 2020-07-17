@@ -1,0 +1,45 @@
+/* AUDIENCIA
+*/
+
+.audiencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-gray-light);
+  padding: 100px 30px;
+  height: auto;
+  text-align: center;
+}
+
+.audiencia h2 {
+  font-family: 'bold';
+  font-size: 1.5rem;
+  color: var(--c-blue-dark);
+  max-width: 800px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.audiencia h2 span {
+  color: var(--c-blue-strong);
+}
+
+.audiencia p {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+  max-width: 500px;
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 600px) {
+  .audiencia h2 {
+    font-size: 1.2rem;
+    max-width: 400px;
+    padding-bottom: 20px;
+  }
+}
+

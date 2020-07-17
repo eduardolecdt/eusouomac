@@ -1,0 +1,111 @@
+/* COPRODUCAO
+*/
+
+.coproducao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* IMAGEM
+*/
+
+.coproducao .imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-blue-dark);
+  width: 60%;
+  min-height: 100vh;
+  padding: 100px 50px;
+}
+
+.coproducao .imagem img {
+  width: 100%;
+}
+
+/* TEXTO
+*/
+
+.coproducao .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 100px;
+}
+
+.coproducao .texto h2 {
+  font-family: 'bold';
+  font-size: 1.5rem;
+  color: var(--c-blue-dark);
+  text-transform: uppercase;
+  max-width: 500px;
+  padding-bottom: 10px;
+}
+
+.coproducao .texto h2 span {
+  color: var(--c-blue-strong);
+}
+
+.coproducao .texto h2 span {
+  color: var(--c-blue-strong);
+}
+
+.coproducao .texto h3 {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+  max-width: 650px;
+  padding-bottom: 10px;
+}
+
+.coproducao .texto button {
+  font-family: 'bold';
+  font-size: 1rem;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: var(--c-white);
+  background-image: linear-gradient(to left, #00EBFC, #0025FF);
+  background-image: -webkit-linear-gradient(to left, #00EBFC, #0025FF);
+  background-image: -moz-linear-gradient(to left, #00EBFC, #0025FF);
+  background-image: -o-linear-gradient(to left, #00EBFC, #0025FF);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.coproducao .texto button:hover {
+  opacity: 0.7;
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 800px) {
+  .coproducao {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .coproducao .imagem {
+    width: 100%;
+    min-height: auto;
+    padding: 50px 20px;
+  }
+  .coproducao .imagem img {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .coproducao .texto {
+    padding: 100px 30px;
+  }
+  .coproducao .texto h2 {
+    font-size: 1.2rem;
+  }
+  .coproducao .texto h3 {
+    max-width: 200px;
+  }
+}

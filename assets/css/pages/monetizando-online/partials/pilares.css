@@ -1,0 +1,125 @@
+/* PILARES
+*/
+
+.pilares {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* LINHA
+*/
+
+.pilares .linha {
+  height: 100vh;
+  width: 20px;
+  background-image: linear-gradient(to bottom, #00EBFC, #0025FF);
+  background-image: -webkit-linear-gradient(to bottom, #00EBFC, #0025FF);
+  background-image: -moz-linear-gradient(to bottom, #00EBFC, #0025FF);
+  background-image: -o-linear-gradient(to bottom, #00EBFC, #0025FF);;
+}
+
+/* TITULO
+*/
+
+.pilares .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-blue-dark);
+  width: 60%;
+  min-height: 100vh;
+  padding: 100px 50px;
+}
+
+.pilares .titulo h2 {
+  font-family: 'bold';
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: var(--c-white);
+  text-transform: uppercase;
+}
+
+.pilares .titulo h2 span {
+  color: var(--c-blue-light);
+}
+
+/* LISTA
+*/
+
+.pilares .lista {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+}
+
+.pilares .lista .itens {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+.pilares .lista .itens p {
+  font-family: 'bold';
+  font-size: 1.5rem;
+  color: var(--c-blue-dark);
+}
+
+.pilares .lista h3 {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+  max-width: 400px;
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 1000px) {
+  .pilares .titulo {
+    width: 100%;
+  }
+  .pilares .lista {
+    padding: 100px 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .pilares {
+    flex-direction: column;
+  }
+  .pilares .linha {
+    height: 20px;
+    width: 100%;
+    background-image: linear-gradient(to left, #00EBFC, #0025FF);
+    background-image: -webkit-linear-gradient(to left, #00EBFC, #0025FF);
+    background-image: -moz-linear-gradient(to left, #00EBFC, #0025FF);
+    background-image: -o-linear-gradient(to left, #00EBFC, #0025FF);;
+  }
+  .pilares .titulo {
+    min-height: 400px;
+    width: 100%;
+    padding: 50px 20px;
+  }
+  .pilares .titulo h2 {
+    max-width: 400px;
+    text-align: center;
+  }
+  .pilares .lista {
+    align-items: flex-start;
+    min-height: auto;
+    padding: 100px 30px;
+  }
+  .pilares .lista .itens p {
+    font-size: 2rem;
+    color: var(--c-blue-dark);
+  }
+}

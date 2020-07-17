@@ -25,9 +25,9 @@ header .texto img {
 }
 
 header .texto h1 {
-  font-family: 'heavy';
+  font-family: 'bold';
   font-size: 2rem;
-  line-height: 2rem;
+  line-height: 2.3rem;
   color: var(--c-blue-dark);
   text-transform: uppercase;
   max-width: 550px;

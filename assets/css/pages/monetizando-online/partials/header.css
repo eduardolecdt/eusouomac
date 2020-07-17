@@ -1,0 +1,122 @@
+/* HEADER
+*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+/* TEXTO
+*/
+
+header .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  padding: 100px;
+}
+
+header .texto img {
+  display: none;
+}
+
+header .texto h1 {
+  font-family: 'heavy';
+  font-size: 2rem;
+  line-height: 2rem;
+  color: var(--c-blue-dark);
+  text-transform: uppercase;
+  max-width: 550px;
+  margin: 0px;
+}
+
+header .texto h1 span {
+  color: var(--c-blue-strong);
+}
+
+header .texto p {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+  max-width: 650px;
+}
+
+header .texto button {
+  font-family: 'bold';
+  font-size: 1rem;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: var(--c-white);
+  background-image: linear-gradient(to left, #00EBFC, #0025FF);
+  background-image: -webkit-linear-gradient(to left, #00EBFC, #0025FF);
+  background-image: -moz-linear-gradient(to left, #00EBFC, #0025FF);
+  background-image: -o-linear-gradient(to left, #00EBFC, #0025FF);
+  transition: all 0.3s;
+}
+
+header .texto button:hover {
+  opacity: 0.7;
+}
+
+/* IMAGEM
+*/
+
+header .imagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--c-blue-dark);
+  padding: 100px;
+}
+
+header .imagem img {
+  height: 200px;
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 1000px) {
+  header {
+    min-height: 90vh;
+  }
+  header .texto {
+    align-items: center;
+    text-align: center;
+    padding: 100px 30px;
+  }
+  header .imagem {
+    display: none;
+  }
+  header .texto img {
+    display: flex;
+    height: 100px;
+  }
+  header .texto p {
+    max-width: 500px;
+  }
+  header .texto h1 {
+    padding-top: 50px;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header .texto h1 {
+    padding-top: 30px;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    max-width: 300px;
+  }
+  header .texto img {
+    height: 70px;
+  }
+}

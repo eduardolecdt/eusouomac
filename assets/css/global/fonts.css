@@ -2,8 +2,26 @@
 */
 
 @font-face {
-  font-family: '';
-  src: url('') format('');
+  font-family: 'heavy';
+  src: url('../../../images/fonts/gilroyheavy.woff') format('woff');
+
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bold';
+  src: url('../../../images/fonts/gilroybold.woff') format('woff');
+
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'medium';
+  src: url('../../../images/fonts/gilroymedium.woff') format('woff');
 
   font-display: swap;
   font-weight: normal;

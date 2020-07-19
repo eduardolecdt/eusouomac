@@ -1,0 +1,134 @@
+/* ONDE
+*/
+
+.onde {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* LINHA
+*/
+
+.onde .linha {
+  height: 100vh;
+  width: 20px;
+  background-image: linear-gradient(to bottom, #00EBFC, #0025FF);
+  background-image: -webkit-linear-gradient(to bottom, #00EBFC, #0025FF);
+  background-image: -moz-linear-gradient(to bottom, #00EBFC, #0025FF);
+  background-image: -o-linear-gradient(to bottom, #00EBFC, #0025FF);;
+}
+
+/* ONDE
+*/
+
+.onde .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: 70%;
+  background-color: var(--c-blue-dark);
+  min-height: 100vh;
+  padding: 100px 50px;
+}
+
+.onde .titulo h2 {
+  font-family: 'bold';
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: var(--c-white);
+  text-transform: uppercase;
+}
+
+.onde .titulo h2 span {
+  color: var(--c-blue-light);
+}
+
+/* ONDE
+*/
+
+.onde .itens {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  background-color: var(--c-gray-light);
+  min-height: 100vh;
+  padding: 100px;
+}
+
+.onde .itens .item:nth-child(2) p {
+  text-decoration: underline;
+  color: var(--c-blue-dark);
+}
+
+.onde .itens .item {
+  max-width: 400px;
+  padding-bottom: 40px;
+}
+
+.onde .itens .item p {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+}
+
+.onde .itens button {
+  font-family: 'bold';
+  font-size: 1rem;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: var(--c-white);
+  background-image: linear-gradient(to left, #00EBFC, #0025FF);
+  background-image: -webkit-linear-gradient(to left, #00EBFC, #0025FF);
+  background-image: -moz-linear-gradient(to left, #00EBFC, #0025FF);
+  background-image: -o-linear-gradient(to left, #00EBFC, #0025FF);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.onde .itens button:hover {
+  opacity: 0.7;
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 1000px) {
+  .onde .titulo {
+    width: 100%;
+  }
+  .onde .itens {
+    padding: 100px 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .onde {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .onde .titulo {
+    padding: 100px 30px;
+    min-height: auto;
+  }
+  .onde .itens {
+    padding: 100px 30px;
+    min-height: auto;
+  }
+  .onde .linha {
+    height: 20px;
+    width: 100%;
+    background-image: linear-gradient(to left, #00EBFC, #0025FF);
+    background-image: -webkit-linear-gradient(to left, #00EBFC, #0025FF);
+    background-image: -moz-linear-gradient(to left, #00EBFC, #0025FF);
+    background-image: -o-linear-gradient(to left, #00EBFC, #0025FF);;
+  }
+}
+

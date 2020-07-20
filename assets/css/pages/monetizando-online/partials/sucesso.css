@@ -1,2 +1,55 @@
 /* SUCESSO
 */
+
+.sucesso {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 20px 30px;
+  text-align: center;
+  background-image: linear-gradient(to left, #00EBFC, #0025FF);
+  background-image: -webkit-linear-gradient(to left, #00EBFC, #0025FF);
+  background-image: -moz-linear-gradient(to left, #00EBFC, #0025FF);
+  background-image: -o-linear-gradient(to left, #00EBFC, #0025FF);;
+}
+
+.sucesso h2 {
+  font-family: 'bold';
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--c-white);
+  padding-right: 20px;
+}
+
+.sucesso button {
+  font-family: 'bold';
+  font-size: 1rem;
+  color: var(--c-blue-strong);
+  background-color: var(--c-white);
+  padding: 5px 15px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.sucesso button:hover {
+  opacity: 0.8;
+}
+
+/* SUCESSO
+*/
+
+@media screen and (max-width: 800px) {
+  .sucesso {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .sucesso h2 {
+    font-size: 1.1rem;
+    padding-right: 0px;
+    max-width: 230px;
+    padding-bottom: 10px;
+  }
+}

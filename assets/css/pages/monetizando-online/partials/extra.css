@@ -1,2 +1,100 @@
 /* EXTRA
 */
+
+.extra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-white);
+  padding: 100px 20px;
+}
+
+/* TITULO
+*/
+
+.extra .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.extra .titulo h2 {
+  font-family: 'bold';
+  font-size: 1.5rem;
+  color: var(--c-blue-dark);
+  text-transform: uppercase;
+  max-width: 600px;
+  padding-bottom: 10px;
+}
+
+.extra .titulo h2 span {
+  color: var(--c-blue-strong);
+}
+
+.extra .titulo p {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+  max-width: 700px;
+}
+
+/* ITENS
+*/
+
+.extra .itens {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+}
+
+.extra .itens .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.extra .itens .item img {
+  width: 30px;
+}
+
+.extra .itens .item p {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+  padding-left: 10px;
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 1000px) {
+  .extra .itens {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 400px;
+  }
+  .extra .itens .item {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 0px;
+  }
+  .extra .titulo h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .extra .itens {
+    max-width: 250px;
+  }
+}

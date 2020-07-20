@@ -1,2 +1,131 @@
 /* TEMPO
 */
+
+.tempo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+/* LINHA
+*/
+
+.tempo .linha {
+  min-height: 50vh;
+  width: 20px;
+  background-image: linear-gradient(to bottom, #00EBFC, #0025FF);
+  background-image: -webkit-linear-gradient(to bottom, #00EBFC, #0025FF);
+  background-image: -moz-linear-gradient(to bottom, #00EBFC, #0025FF);
+  background-image: -o-linear-gradient(to bottom, #00EBFC, #0025FF);;
+}
+
+/* TITULO
+*/
+
+.tempo .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  background-color: var(--c-blue-dark);
+  width: 60%;
+  min-height: 50vh;
+  padding: 80px 50px;
+}
+
+.tempo .titulo h2 {
+  font-family: 'bold';
+  font-size: 2rem;
+  color: var(--c-white);
+  text-transform: uppercase;
+  padding: 10px 0px;
+}
+
+.tempo .titulo h3 {
+  font-family: 'bold';
+  font-size: 1.2rem;
+  color: var(--c-red);
+  text-transform: uppercase;
+}
+
+/* QUADROS
+*/
+
+.tempo .quadros {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-gray-light);
+  width: 100%;
+  min-height: 50vh;
+  padding: 80px 50px;
+}
+
+.tempo .quadros .quadro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+.tempo .quadros .quadro span {
+  font-family: 'bold';
+  font-size: 2rem;
+  color: var(--c-blue-strong);
+  padding-right: 5px;
+  text-align: center;
+}
+
+.tempo .quadros .quadro p {
+  font-family: 'medium';
+  font-size: 1.2rem;
+  color: var(--c-gray);
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 1000px) {
+  .tempo {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .tempo .quadros {
+    min-height: auto;
+    padding: 80px 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .tempo .titulo {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: auto;
+    padding: 50px 30px;
+  }
+  .tempo .titulo h2 {
+    font-size: 1.5rem;
+    max-width: 300px;
+  }
+  .tempo .quadros .quadro span {
+    font-size: 3rem;
+  }
+  .tempo .quadros .quadro p {
+    font-size: 1.5rem;
+  }
+  .tempo .linha {
+    display: flex;
+    height: 20px;
+    min-height: auto;
+    width: 100%;
+    background-image: linear-gradient(to left, #00EBFC, #0025FF);
+    background-image: -webkit-linear-gradient(to left, #00EBFC, #0025FF);
+    background-image: -moz-linear-gradient(to left, #00EBFC, #0025FF);
+    background-image: -o-linear-gradient(to left, #00EBFC, #0025FF);;
+  }
+}

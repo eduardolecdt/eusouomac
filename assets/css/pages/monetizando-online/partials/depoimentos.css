@@ -1,2 +1,76 @@
 /* DEPOIMENTOS
 */
+
+.depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-white);
+  padding: 100px 40px;
+}
+
+/* TITULOS
+*/
+
+.depoimentos .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.depoimentos .titulo h2 {
+  font-family: 'bold';
+  font-size: 1.5rem;
+  color: var(--c-blue-dark);
+  text-transform: uppercase;
+  max-width: 600px;
+}
+
+.depoimentos .titulo p {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+  max-width: 700px;
+}
+
+/* VIDEOS
+*/
+
+.depoimentos .videos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.depoimentos .videos .video {
+  width: 100%;
+  max-width: 400px;
+}
+
+.depoimentos .videos .video:nth-child(2) {
+  padding: 0px 30px;
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 900px) {
+  .depoimentos .videos {
+    flex-direction: column;
+    max-width: 800px;
+  }
+  .depoimentos .videos .video:nth-child(2) {
+    padding: 0px 0px;
+  }
+  .depoimentos .titulo h2 {
+    max-width: 220px;
+  }
+}

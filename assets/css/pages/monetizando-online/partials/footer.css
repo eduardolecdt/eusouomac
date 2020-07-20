@@ -1,0 +1,26 @@
+/* FOOTER
+*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-black);
+}
+
+footer p {
+  color: var(--c-white);
+  font-family: 'medium';
+  font-size: 0.8rem;
+  padding: 15px 0px;
+}
+
+footer p a {
+  color: var(--c-white);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+footer p a:hover {
+  opacity: 0.5;
+}

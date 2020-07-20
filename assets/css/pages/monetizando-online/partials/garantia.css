@@ -1,2 +1,118 @@
 /* GARANTIA
 */
+
+.garantia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* LINHA
+*/
+
+.garantia .linha {
+  height: 100vh;
+  width: 20px;
+  background-image: linear-gradient(to bottom, #00EBFC, #0025FF);
+  background-image: -webkit-linear-gradient(to bottom, #00EBFC, #0025FF);
+  background-image: -moz-linear-gradient(to bottom, #00EBFC, #0025FF);
+  background-image: -o-linear-gradient(to bottom, #00EBFC, #0025FF);;
+}
+
+/* garantia
+*/
+
+.garantia .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: 70%;
+  background-color: var(--c-blue-dark);
+  min-height: 100vh;
+  padding: 100px 50px;
+}
+
+.garantia .titulo p {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-white);
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* garantia
+*/
+
+.garantia .itens {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  background-color: var(--c-gray-light);
+  min-height: 100vh;
+  padding: 100px;
+}
+
+.garantia .itens .item {
+  max-width: 400px;
+  padding-bottom: 40px;
+}
+
+.garantia .itens .item h2 {
+  font-family: 'bold';
+  font-size: 1.2rem;
+  color: var(--c-blue-strong);
+  padding-bottom: 5px;
+}
+
+.garantia .itens .item p {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+}
+
+.garantia .itens .item p span {
+  text-decoration: underline;
+  color: var(--c-blue-dark);
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 1000px) {
+  .garantia .titulo {
+    width: 100%;
+  }
+  .garantia .itens {
+    padding: 100px 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .garantia {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .garantia .titulo {
+    padding: 100px 30px;
+    min-height: auto;
+  }
+  .garantia .itens {
+    padding: 100px 30px;
+    min-height: auto;
+  }
+  .garantia .linha {
+    height: 20px;
+    width: 100%;
+    background-image: linear-gradient(to left, #00EBFC, #0025FF);
+    background-image: -webkit-linear-gradient(to left, #00EBFC, #0025FF);
+    background-image: -moz-linear-gradient(to left, #00EBFC, #0025FF);
+    background-image: -o-linear-gradient(to left, #00EBFC, #0025FF);;
+  }
+}

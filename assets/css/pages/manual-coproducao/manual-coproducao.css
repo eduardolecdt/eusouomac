@@ -2,3 +2,16 @@
 */
 
 @import '../../global/all.css';
+
+
+@import './partials/header.css';
+@import './partials/audiencia.css';
+@import './partials/construir.css';
+@import './partials/importante.css';
+@import './partials/quantidade.css';
+@import './partials/diferencial.css';
+@import './partials/mercado.css';
+@import './partials/sem.css';
+@import './partials/preco.css';
+@import './partials/autor.css';
+@import './partials/footer.css';

@@ -1,0 +1,35 @@
+/* SECTION
+*/
+
+.erro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.erro h2 {
+  font-family: 'bold';
+  font-size: 2rem;
+  color: var(--c-red);
+  padding-top: 20px;
+}
+
+.erro p {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+  padding-top: 10px;
+  max-width: 300px;
+}
+
+.erro a {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-blue-dark);
+  margin-top: 15px;
+  text-decoration: underline;
+}

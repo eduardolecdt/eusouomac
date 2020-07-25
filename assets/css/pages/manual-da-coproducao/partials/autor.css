@@ -1,0 +1,50 @@
+/* AUTOR
+*/
+
+.autor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-gray-light);
+  padding: 100px 30px;
+}
+
+.autor .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 600px;
+}
+
+.autor .texto h2 {
+  font-family: 'bold';
+  font-size: 1.2rem;
+  color: var(--c-blue-dark);
+  text-transform: uppercase;
+  padding: 10px 0px;
+}
+
+.autor .texto h2 a {
+  color: var(--c-blue-strong);
+  text-decoration: none;
+}
+
+.autor .texto p {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 600px) {
+  .autor .texto h2 {
+    font-size: 1.1rem;
+  }
+  .autor .texto p {
+    font-size: 0.9rem;
+  }
+}

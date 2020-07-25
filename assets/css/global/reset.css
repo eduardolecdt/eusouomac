@@ -347,3 +347,9 @@ button {
   font-weight: normal;
   margin: 0;
 }
+
+a.desativado {
+  filter: grayscale(100%);
+  pointer-events: none;
+  opacity: 0.2;
+}

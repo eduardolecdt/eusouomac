@@ -55,6 +55,12 @@
   max-width: 400px;
 }
 
+.construir .titulo p.forte {
+  padding-top: 10px;
+  text-decoration: underline;
+  color: var(--c-blue-dark);
+}
+
 /* IMAGEM
 */
 

@@ -6,13 +6,13 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: var(--c-black);
+  padding: 15px;
 }
 
 footer p {
   color: var(--c-white);
   font-family: 'medium';
   font-size: 0.8rem;
-  padding: 15px 0px;
 }
 
 footer p a {
@@ -23,4 +23,27 @@ footer p a {
 
 footer p a:hover {
   opacity: 0.5;
+}
+
+footer a.lecdt {
+  margin-left: auto;
+}
+
+footer img {
+  width: 60px;
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+
+footer img:hover {
+  opacity: 1;
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 700px) {
+  footer img {
+    width: 40px;
+  }
 }

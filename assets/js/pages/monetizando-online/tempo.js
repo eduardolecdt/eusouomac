@@ -1,4 +1,4 @@
-var countDownDate = new Date("Jul 25, 2020 23:59:00").getTime();
+var countDownDate = new Date("Jul 29, 2020 23:59:00").getTime();
 
 var x = setInterval(function() {
     var now = new Date().getTime();
@@ -15,11 +15,12 @@ var x = setInterval(function() {
 
    if (distance < 0) {
       clearInterval(x);
-      document.getElementById("text").innerHTML = "Desculpe! O treinamento está fechado.";
-      document.getElementById("dias").innerHTML ='0';
-      document.getElementById("horas").innerHTML ='0';
-      document.getElementById("minutos").innerHTML ='0' ;
-      document.getElementById("segundos").innerHTML = '0';
+      document.getElementById("text").innerHTML = 'Desculpe! O treinamento está fechado.';
+      document.getElementById("dias").innerHTML = "0";
+      document.querySelector('a.link').classList.add('desativado');
+      document.getElementById("horas").innerHTML = "0";
+      document.getElementById("minutos").innerHTML = "0";
+      document.getElementById("segundos").innerHTML = "0";
    }
 
 }, 1000);

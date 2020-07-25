@@ -37,7 +37,7 @@
     if (!_isAndroid()) return
     if (!_isInAppBrowser()) return
 
-    window.location = 'intent://eusouomac.com/telegram#Intent;scheme=https;package=com.android.chrome;end'
+    window.location = 'intent://eusouomac.com/manual-da-coproducao#Intent;scheme=https;package=com.android.chrome;end'
   }
 
   redirectAndroidInAppBrowsers()

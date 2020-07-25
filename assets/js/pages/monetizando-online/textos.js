@@ -1,0 +1,8 @@
+document.querySelector('#preco_parcelado').innerText = '0x de R$0,00'
+document.querySelector('#preco_antes').innerText = 'R$0,00'
+document.querySelector('#preco_total').innerText = 'R$0,00'
+document.querySelector('#link_1').href = ''
+document.querySelector('#link_2').href = ''
+document.querySelector('#link_3').href = ''
+document.querySelector('#link_4').href = ''
+document.querySelector('#link_5').href = ''

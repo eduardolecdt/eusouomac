@@ -1,0 +1,66 @@
+/* SEM
+*/
+
+.sem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-gray-light);
+  padding: 100px 30px;
+}
+
+/* ITENS
+*/
+
+.sem .itens {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  padding-bottom: 30px;
+}
+
+.sem .itens.ultimo {
+  padding-bottom: 0px;
+}
+
+.sem .itens .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.sem .itens .item.primeiro {
+  padding-left: 0px;
+}
+
+.sem .itens .item img {
+  width: 30px;
+}
+
+.sem .itens .item p {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+  padding-left: 10px;
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 900px) {
+  .sem .itens {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    padding-bottom: 0px;
+  }
+  .sem .itens .item {
+    padding-left: 0px;
+    padding-bottom: 15px;
+  }
+}

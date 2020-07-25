@@ -10,6 +10,12 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 </IfModule>
 
+<IfModule mod_rewrite.c>
+RewriteEngine On
+ErrorDocument 404 /erro/404.html
+ErrorDocument 503 /erro/503.html
+</IfModule>
+
 # Gzip compression
 <IfModule mod_deflate.c>
 # Active compression

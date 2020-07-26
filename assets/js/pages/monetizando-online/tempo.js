@@ -1,26 +1,113 @@
-var countDownDate = new Date("Jul 29, 2020 23:59:00").getTime();
+class Temporizador {
+  constructor () {
+    this.dataFinal = null
+    this.seletoresTemporizador = {
+      dia: null,
+      hora: null,
+      minuto: null,
+      segundo: null
+    }
+    this.mensagemEncerramento = {
+      seletor: null,
+      mensagem: null
+    },
+    this.botoesBloqueados = {
+      seletor: null,
+      classe: null
+    }
+  }
 
-var x = setInterval(function() {
-    var now = new Date().getTime();
-    var distance = countDownDate - now;
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // Inicializacao
 
-      document.getElementById("dias").innerHTML = days;
-      document.getElementById("horas").innerHTML = hours;
-      document.getElementById("minutos").innerHTML = minutes;
-      document.getElementById("segundos").innerHTML = seconds;
+  definirTemporizador (dia, hora, minuto, segundo) {
+    this.seletoresTemporizador.dia = dia
+    this.seletoresTemporizador.hora = hora
+    this.seletoresTemporizador.minuto = minuto
+    this.seletoresTemporizador.segundo = segundo
+  }
 
-   if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("text").innerHTML = 'Desculpe! O treinamento está fechado.';
-      document.getElementById("dias").innerHTML = "0";
-      document.querySelector('a.link').classList.add('desativado');
-      document.getElementById("horas").innerHTML = "0";
-      document.getElementById("minutos").innerHTML = "0";
-      document.getElementById("segundos").innerHTML = "0";
-   }
+  definirBotoesASeremBloqueados (seletor, classe) {
+    this.botoesBloqueados.seletor = seletor
+    this.botoesBloqueados.classe = classe
+  }
 
-}, 1000);
+  definirMensagemEncerramento (seletor, mensagem) {
+    this.mensagemEncerramento.seletor = seletor
+    this.mensagemEncerramento.mensagem = mensagem
+  }
+
+  definirDataFinal (ano, mes, dia, hora = 0, minuto = 0, segundo = 0) {
+    mes -= 1
+    this.dataFinal = new Date(ano, mes, dia, hora, minuto, segundo)
+  }
+
+  // Sistema
+
+  iniciar () {
+    const intervalo = setInterval(() => {
+      const agora = this._retornarDataAtual()
+      const dataLimite = this.dataFinal
+      const tempoRestante = this._calcularTempoRestante(dataLimite, agora)
+
+      if (tempoRestante === 0) {
+        const tempoFinalizado = { dias: 0, horas: 0, minutos: 0, segundos: 0 }
+        this._renderizar(tempoFinalizado)
+        this._exibirMensagemErro()
+        this._travarBotoes()
+        clearInterval(intervalo)
+        return
+      }
+
+      this._renderizar(tempoRestante)
+    }, 1000)
+  }
+
+  _renderizar (tempoRestante) {
+    document.querySelector(this.seletoresTemporizador.dia).innerText = tempoRestante.dias
+    document.querySelector(this.seletoresTemporizador.hora).innerText = tempoRestante.horas
+    document.querySelector(this.seletoresTemporizador.minuto).innerText = tempoRestante.minutos
+    document.querySelector(this.seletoresTemporizador.segundo).innerText = tempoRestante.segundos
+  }
+
+  _exibirMensagemErro () {
+    document.querySelector(this.mensagemEncerramento.seletor).innerText = this.mensagemEncerramento.mensagem
+  }
+
+  _travarBotoes () {
+    const botoes = document.querySelectorAll(this.botoesBloqueados.seletor)
+    for (const botao of botoes) {
+      botao.classList.add(this.botoesBloqueados.classe)
+    }
+  }
+
+  // Operacoes com Data
+
+  _retornarDataAtual () {
+    return new Date()
+  }
+
+  _calcularTempoRestante (data1, data2) {
+    const diferenca = data1 - data2
+    if (diferenca < 0) return 0
+
+    const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24))
+    const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+    const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60))
+    const segundos = Math.floor((diferenca % (1000 * 60)) / 1000)
+
+    return { dias, horas, minutos, segundos }
+  }
+}
+
+// ---- Inicializacao ----
+
+(function () {
+  const temporizador = new Temporizador()
+
+  temporizador.definirTemporizador('span#dias', 'span#horas', 'span#minutos', 'span#segundos')
+  temporizador.definirBotoesASeremBloqueados('a.link', 'desativado')
+  temporizador.definirMensagemEncerramento('h3#acabou', 'A promoção acabou!')
+  temporizador.definirDataFinal(2020, 7, 25)
+
+  temporizador.iniciar()
+}())

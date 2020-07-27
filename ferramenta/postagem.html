@@ -36,7 +36,7 @@
   <meta name="robots" content="index, follow">
   <meta name="author" content="@eusouomac">
 
-  <meta itemprop="name" content="Monetizando Online">
+  <meta itemprop="name" content="Ferramenta Postagem">
   <meta name="article:author" content="@eusouomac">
   <meta property="og:site_name" content="eusouomac.com">
 
@@ -88,43 +88,87 @@
 </head>
 
 <!-- BODY -->
-<body>
+<body id="afgad">
 
   <!-- FERRAMENTA -->
   <section class="ferramenta">
+
     <!-- OBJETOS -->
     <div class="objetos">
+      <div class="titulo">
+        <h2>Criador de Postagem</h2>
+        <p>Crie seus posts do jeito que quiser, depois tire um print e use-os nas suas redes sociais.</p>
+      </div>
+      <div class="nome">
+        <p>Cor do fundo</p>
+      </div>
       <div class="cores background">
-        <div class="cor azul"></div>
-        <div class="cor vermelho"></div>
-        <div class="cor verde"></div>
-        <div class="cor laranja"></div>
-        <div class="cor preto"></div>
-        <div class="cor branco"></div>
+        <button class="cor azul primeiro" id="background_azul"></button>
+        <button class="cor azul_claro" id="background_azul_claro"></button>
+        <button class="cor azul_escuro" id="background_azul_escuro"></button>
+        <button class="cor gradiente" id="background_gradiente"></button>
+        <button class="cor vermelho" id="background_vermelho"></button>
+        <button class="cor verde" id="background_verde"></button>
+        <button class="cor preto" id="background_preto"></button>
+        <button class="cor cinza" id="background_cinza"></button>
+        <button class="cor branco" id="background_branco"></button>
+      </div>
+      <div class="nome">
+        <p>Cor do subtitulo</p>
       </div>
       <div class="cores texto">
-        <div class="cor azul"></div>
-        <div class="cor vermelho"></div>
-        <div class="cor verde"></div>
-        <div class="cor laranja"></div>
-        <div class="cor preto"></div>
-        <div class="cor branco"></div>
+        <div class="cor azul primeiro" id="subtitulo_azul"></div>
+        <div class="cor azul_claro" id="subtitulo_azul_claro"></div>
+        <div class="cor azul_escuro" id="subtitulo_azul_escuro"></div>
+        <div class="cor vermelho" id="subtitulo_vermelho"></div>
+        <div class="cor verde" id="subtitulo_verde"></div>
+        <div class="cor preto" id="subtitulo_preto"></div>
+        <div class="cor cinza" id="subtitulo_cinza"></div>
+        <div class="cor branco" id="subtitulo_branco"></div>
+      </div>
+      <div class="nome">
+        <p>Cor do título</p>
+      </div>
+      <div class="cores texto">
+        <div class="cor azul primeiro" id="titulo_azul"></div>
+        <div class="cor azul_claro" id="titulo_azul_claro"></div>
+        <div class="cor azul_escuro" id="titulo_azul_escuro"></div>
+        <div class="cor vermelho" id="titulo_vermelho"></div>
+        <div class="cor verde" id="titulo_verde"></div>
+        <div class="cor preto" id="titulo_preto"></div>
+        <div class="cor cinza" id="titulo_cinza"></div>
+        <div class="cor branco" id="titulo_branco"></div>
+      </div>
+      <div class="nome">
+        <p>Cor do arroba</p>
+      </div>
+      <div class="cores texto">
+        <div class="cor azul primeiro" id="arroba_azul"></div>
+        <div class="cor azul_claro" id="arroba_azul_claro"></div>
+        <div class="cor azul_escuro" id="arroba_azul_escuro"></div>
+        <div class="cor vermelho" id="arroba_vermelho"></div>
+        <div class="cor verde" id="arroba_verde"></div>
+        <div class="cor preto" id="arroba_preto"></div>
+        <div class="cor cinza" id="arroba_cinza"></div>
+        <div class="cor branco" id="arroba_branco"></div>
       </div>
     </div>
+
     <!-- VISUALIZACAO -->
-    <div class="visualizacao">
+    <div id="fundo" class="visualizacao">
       <div class="quadro">
         <div class="subtitulo">
-          <input type="text" spellcheck="false" autocomplete="none" placeholder="SUBTÍTULO AQUI" value="SUBTÍTULO AQUI">
+          <input id="subtitulo" type="text" spellcheck="false" autocomplete="none" placeholder="SUBTÍTULO AQUI" value="SUBTÍTULO AQUI">
         </div>
         <div class="titulo">
-          <input type="text" spellcheck="false" autocomplete="none" placeholder="TÍTULO AQUI" value="TÍTULO AQUI">
+          <input id="titulo" type="text" spellcheck="false" autocomplete="none" placeholder="TÍTULO AQUI" value="TÍTULO AQUI">
         </div>
         <div class="arroba">
-          <input type="text" spellcheck="false" autocomplete="none" placeholder="EUSOUOMAC" value="eusouomac">
+          <input id="arroba" type="text" spellcheck="false" autocomplete="none" placeholder="EUSOUOMAC" value="eusouomac">
         </div>
       </div>
     </div>
+
   </section>
 
   <!-- FOOTER -->
@@ -135,8 +179,11 @@
 
   <!-- JS -->
   <script src="../assets/js/global/drag-drop.js"></script>
-  <script src="../assets/js/global/youtube-video.js"></script>
   <script src="../assets/js/pages/ferramenta/postagem/postagem.js"></script>
+  <script src="../assets/js/pages/ferramenta/postagem/cor-background.js"></script>
+  <script src="../assets/js/pages/ferramenta/postagem/cor-subtitulo.js"></script>
+  <script src="../assets/js/pages/ferramenta/postagem/cor-titulo.js"></script>
+  <script src="../assets/js/pages/ferramenta/postagem/cor-arroba.js"></script>
 
 </body>
 

@@ -1,0 +1,22 @@
+/* SECTION FERRAMENTA
+*/
+
+.ferramenta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 1000px) {
+  .ferramenta {
+    flex-direction: column;
+    min-height: auto;
+    width: 100%;
+  }
+}

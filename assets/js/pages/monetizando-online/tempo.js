@@ -106,7 +106,7 @@ class Temporizador {
 
   temporizador.definirTemporizador('span#dias', 'span#horas', 'span#minutos', 'span#segundos')
   temporizador.definirBotoesASeremBloqueados('a.link', 'desativado')
-  temporizador.definirMensagemEncerramento('h3#acabou', 'A promoção acabou!')
+  temporizador.definirMensagemEncerramento('h3#acabou', 'O MO está fechado!')
   temporizador.definirDataFinal(2020, 7, 25)
 
   temporizador.iniciar()

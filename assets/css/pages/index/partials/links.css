@@ -1,0 +1,73 @@
+/* LINKS
+*/
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px 30px;
+  width: 100%;
+  background-color: var(--c-black);
+}
+
+.links .quadros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 410px;
+  width: 100%;
+}
+
+.links .quadros .quadro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid var(--c-white);
+  background-color: var(--c-white);
+  border-radius: 15px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 20px 10px 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.links .quadros .quadro.primeiro {
+  margin-top: 0px;
+}
+
+.links .quadros .quadro img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+}
+
+.links .quadros .quadro h2 {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+  padding-left: 15px;
+}
+
+.links .quadros .quadro:hover {
+  box-shadow: 0px 0px 30px 0px #ffffff50;
+  border: 2px solid var(--c-gray);
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 600px) {
+  .links {
+    padding: 50px 30px;
+  }
+  .links .quadros {
+    max-width: 260px;
+  }
+}
+

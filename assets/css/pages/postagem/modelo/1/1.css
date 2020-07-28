@@ -1,7 +1,7 @@
-/* FERRAMENTA POSTAGEM
+/* FERRAMENTA POSTAGEM MODELO 1
 */
 
-@import '../../../global/all.css';
+@import '../../../../global/all.css';
 
 @import './partials/ferramenta.css';
 @import './partials/objetos.css';

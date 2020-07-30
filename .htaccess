@@ -13,6 +13,7 @@ RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 <IfModule mod_rewrite.c>
 RewriteEngine On
 ErrorDocument 404 /erro/404.html
+ErrorDocument 503 /erro/503.html
 </IfModule>
 
 # Gzip compression

@@ -2,3 +2,7 @@
 */
 
 @import '../../../../global/all.css';
+
+@import './partials/ferramenta.css';
+@import './partials/objetos.css';
+@import './partials/visualizacao.css';

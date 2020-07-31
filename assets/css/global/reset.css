@@ -117,7 +117,8 @@ li {
 /* INPUT
 */
 
-input {
+input,
+textarea {
   font-family: inherit;
   font-size: 100%;
   line-height: initial;
@@ -172,7 +173,8 @@ button,
 img,
 a,
 input::placeholder,
-label {
+label,
+textarea {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

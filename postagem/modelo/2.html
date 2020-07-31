@@ -93,6 +93,97 @@
   <!-- FERRAMENTA -->
   <section class="ferramenta">
 
+    <!-- OBJETOS -->
+    <div class="objetos">
+      <div class="titulo">
+        <h3>Modelo 2</h3>
+        <h2>Criador de Postagem</h2>
+        <p>Selecione uma imagem de fundo, selecione a cor da transparência entre o texto e o fundo e altere o texto como desejar.</p>
+      </div>
+      <div class="nome">
+        <p>Imagem de fundo</p>
+      </div>
+      <div class="selecionar">
+        <input type="file" hidden="true" accept=".png, .jpeg, .jpg"></input>
+        <button>Selecionar Imagem</button>
+      </div>
+      <div class="nome">
+        <p>Cor da Transparência</p>
+      </div>
+      <div class="cores transparencia">
+        <button class="cor azul primeiro" id="transparencia_azul"></button>
+        <button class="cor azul_claro" id="transparencia_azul_claro"></button>
+        <button class="cor azul_escuro" id="transparencia_azul_escuro"></button>
+        <button class="cor vermelho" id="transparencia_vermelho"></button>
+        <button class="cor verde" id="transparencia_verde"></button>
+        <button class="cor preto" id="transparencia_preto"></button>
+        <button class="cor cinza" id="transparencia_cinza"></button>
+        <button class="cor branco" id="transparencia_branco"></button>
+      </div>
+      <div class="nome">
+        <p>Cor do subtitulo</p>
+      </div>
+      <div class="cores texto">
+        <div class="cor azul primeiro" id="subtitulo_azul"></div>
+        <div class="cor azul_claro" id="subtitulo_azul_claro"></div>
+        <div class="cor azul_escuro" id="subtitulo_azul_escuro"></div>
+        <div class="cor vermelho" id="subtitulo_vermelho"></div>
+        <div class="cor verde" id="subtitulo_verde"></div>
+        <div class="cor preto" id="subtitulo_preto"></div>
+        <div class="cor cinza" id="subtitulo_cinza"></div>
+        <div class="cor branco" id="subtitulo_branco"></div>
+      </div>
+      <div class="nome">
+        <p>Cor do título</p>
+      </div>
+      <div class="cores texto">
+        <div class="cor azul primeiro" id="titulo_azul"></div>
+        <div class="cor azul_claro" id="titulo_azul_claro"></div>
+        <div class="cor azul_escuro" id="titulo_azul_escuro"></div>
+        <div class="cor vermelho" id="titulo_vermelho"></div>
+        <div class="cor verde" id="titulo_verde"></div>
+        <div class="cor preto" id="titulo_preto"></div>
+        <div class="cor cinza" id="titulo_cinza"></div>
+        <div class="cor branco" id="titulo_branco"></div>
+      </div>
+      <div class="nome">
+        <p>Cor do arroba</p>
+      </div>
+      <div class="cores texto">
+        <div class="cor azul primeiro" id="arroba_azul"></div>
+        <div class="cor azul_claro" id="arroba_azul_claro"></div>
+        <div class="cor azul_escuro" id="arroba_azul_escuro"></div>
+        <div class="cor vermelho" id="arroba_vermelho"></div>
+        <div class="cor verde" id="arroba_verde"></div>
+        <div class="cor preto" id="arroba_preto"></div>
+        <div class="cor cinza" id="arroba_cinza"></div>
+        <div class="cor branco" id="arroba_branco"></div>
+      </div>
+      <div class="nome">
+        <p>Alinhamento do Texto</p>
+      </div>
+      <div class="alinhamento">
+        <button class="primeiro" id="alinhamento_esquerda">Esquerda</button>
+        <button id="alinhamento_meio">Meio</button>
+        <button id="alinhamento_direita">Direita</button>
+      </div>
+    </div>
+
+    <!-- VISUALIZACAO -->
+    <div class="visualizacao">
+      <div id="fundoTransparente" class="quadro">
+        <div class="subtitulo">
+          <textarea rows="1" id="subtitulo" spellcheck="false" autocomplete="none" placeholder="SUBTÍTULO AQUI"></textarea>
+        </div>
+        <div class="titulo">
+          <textarea rows="1" id="titulo" spellcheck="false" autocomplete="none" placeholder="TÍTULO AQUI"></textarea>
+        </div>
+        <div class="arroba">
+          <textarea rows="1" id="arroba" spellcheck="false" autocomplete="none" placeholder="@eusouomac"></textarea>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- FOOTER -->
@@ -103,6 +194,13 @@
 
   <!-- JS -->
   <script src="../../assets/js/global/drag-drop.js"></script>
+  <script src="../../assets/js/pages/postagem/modelo/2/textarea.js"></script>
+  <script src="../../assets/js/pages/postagem/modelo/2/cor-transparencia.js"></script>
+  <script src="../../assets/js/pages/postagem/modelo/2/cor-subtitulo.js"></script>
+  <script src="../../assets/js/pages/postagem/modelo/2/cor-titulo.js"></script>
+  <script src="../../assets/js/pages/postagem/modelo/2/cor-arroba.js"></script>
+  <script src="../../assets/js/pages/postagem/modelo/2/alinhamento.js"></script>
+  <script src="../../assets/js/pages/postagem/modelo/2/imagem.js"></script>
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172825781-1"></script>

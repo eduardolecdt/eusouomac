@@ -1,0 +1,84 @@
+/* VISUALIZACAO
+*/
+
+.ferramenta .visualizacao {
+  display: flex;
+  width: 100%;
+  min-height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../../../../../../images/pages/postagem/modelo/2/placeholder.png');
+}
+
+.ferramenta .visualizacao .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-color: #00000090;
+  min-height: 100vh;
+  width: 100%;
+  padding: 200px 50px;
+}
+
+.ferramenta .visualizacao .quadro div textarea {
+  background-color: transparent;
+  resize: none;
+  width: 100%;
+}
+
+.ferramenta .visualizacao .quadro div {
+  width: 100%;
+}
+
+.ferramenta .visualizacao .quadro div textarea::placeholder {
+  opacity: 1;
+}
+
+.ferramenta .visualizacao .quadro .subtitulo textarea {
+  font-family: 'bold';
+  font-size: 1.3rem;
+  color: var(--c-white);
+  text-align: left;
+}
+
+.ferramenta .visualizacao .quadro .titulo textarea {
+  font-family: 'heavy';
+  font-size: 3rem;
+  color: var(--c-white);
+  text-align: left;
+}
+
+.ferramenta .visualizacao .quadro .arroba textarea {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-white);
+  margin-top: 30px;
+  text-align: left;
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 1000px) {
+  .ferramenta .visualizacao .quadro {
+    padding: 150px 30px;
+  }
+  .ferramenta .visualizacao {
+    min-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ferramenta .visualizacao .quadro .subtitulo textarea {
+    font-size: 1.2rem;
+  }
+  .ferramenta .visualizacao .quadro .titulo textarea {
+    font-size: 2rem;
+  }
+  .ferramenta .visualizacao .quadro .arroba textarea {
+    font-size: 0.8rem;
+    margin-top: 25px;
+  }
+}

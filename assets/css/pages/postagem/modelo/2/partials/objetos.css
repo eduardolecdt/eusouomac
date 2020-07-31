@@ -1,0 +1,201 @@
+/* OBJETOS
+*/
+
+.ferramenta .objetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 300px;
+  min-height: 130vh;
+  background-color: var(--c-white);
+  padding: 50px;
+}
+
+/* TEXTO
+*/
+
+.ferramenta .objetos .nome {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  padding: 30px 0px 10px 0px;
+  width: 100%;
+}
+
+.ferramenta .objetos .nome p {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+}
+
+/* ALINHAMENTO
+*/
+
+.ferramenta .objetos .alinhamento {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.ferramenta .objetos .alinhamento button {
+  font-family: 'medium';
+  font-size: 0.9rem;
+  color: var(--c-white);
+  background-color: var(--c-gray);
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.ferramenta .objetos .alinhamento button:hover {
+  opacity: 0.9;
+}
+
+.ferramenta .objetos .alinhamento button.primeiro {
+  margin-left: 0px;
+}
+
+/* TITULO
+*/
+
+.ferramenta .objetos .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+}
+
+.ferramenta .objetos .titulo h3 {
+  font-family: 'bold';
+  font-size: 0.9rem;
+  color: var(--c-blue-strong);
+  text-transform: uppercase;
+}
+
+.ferramenta .objetos .titulo h2 {
+  font-family: 'bold';
+  font-size: 1.3rem;
+  color: var(--c-blue-dark);
+  text-transform: uppercase;
+}
+
+.ferramenta .objetos .titulo p {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+}
+
+/* CORES
+*/
+
+.ferramenta .objetos .cores {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.ferramenta .objetos .cores .cor {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-left: 5px;
+}
+
+.ferramenta .objetos .cores .cor.primeiro {
+  margin-left: 0px;
+}
+
+.ferramenta .objetos .cores .cor:hover {
+  opacity: 0.8;
+}
+
+/* .COR
+*/
+
+.ferramenta .objetos .cores .cor.azul {
+  background-color: var(--c-blue-strong);
+}
+
+.ferramenta .objetos .cores .cor.azul_claro {
+  background-color: var(--c-blue-light);
+}
+
+.ferramenta .objetos .cores .cor.azul_escuro {
+  background-color: var(--c-blue-dark);
+}
+
+.ferramenta .objetos .cores .cor.verde {
+  background-color: var(--c-green);
+}
+
+.ferramenta .objetos .cores .cor.vermelho {
+  background-color: var(--c-red);
+}
+
+.ferramenta .objetos .cores .cor.preto {
+  background-color: var(--c-black);
+}
+
+.ferramenta .objetos .cores .cor.branco {
+  background-color: var(--c-white);
+  border: 1px solid var(--c-gray);
+}
+
+.ferramenta .objetos .cores .cor.cinza {
+  background-color: var(--c-gray);
+}
+
+/* SELECIONAR
+*/
+
+.ferramenta .objetos .selecionar {
+  width: 100%;
+}
+
+.ferramenta .objetos .selecionar button {
+  font-family: 'medium';
+  font-size: 1rem;
+  color: var(--c-gray);
+  width: 100%;
+  background-color: var(--c-white);
+  border: 3px dashed var(--c-gray-light);
+  padding: 30px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.ferramenta .objetos .selecionar button:hover {
+  border: 3px dashed var(--c-blue-strong);
+  color: var(--c-blue-strong);
+}
+
+/* RESPONSIVO
+*/
+
+@media screen and (max-width: 1000px) {
+  .ferramenta .objetos {
+    min-width: 100%;
+    min-height: auto;
+    padding: 100px 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .ferramenta .objetos .cores .cor {
+    width: 25px;
+    height: 25px;
+  }
+}
